@@ -1,5 +1,4 @@
 import simpleWET
-import os
 import json
 
 # Call listRooms, print them out, and print out a count

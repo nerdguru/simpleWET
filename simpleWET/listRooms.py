@@ -1,6 +1,5 @@
 import requests
 import os
-import json
 
 def listRooms():
     # Set up first call
