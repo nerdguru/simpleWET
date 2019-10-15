@@ -7,6 +7,8 @@ setuptools.setup(
     url="https://github.com/nerdguru/simpleWET",
     packages=setuptools.find_packages(),
     install_requires=[
-       'requests'
+       'requests',
+       'fuzzywuzzy',
+       'python-Levenshtein'
     ],
 )
