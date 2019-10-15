@@ -16,9 +16,9 @@ export WET_TOKEN=<your bearer token>
 simpleWET contains four methods:
 
 * **listRooms()** - Returns a JSON list of rooms, including the pagination potentially required of multiple REST API calls.
-* **findRoom(*string*, *threshold*)** - Calls *listRooms()* and then uses [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy)'s `token_sort_ratio()` to find potential matches given the passed in *string*, returning an ordered list for any that score above *threshold*.
-* **createRoom(*name*)** - Creates a new room named *name*.
-* **createMessage(*roomId*, *message*)** - Writes *message* to the room whose ID is *roomId*.
+* **findRoom(*string*, *threshold*)** - Calls *listRooms()* and then uses [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy)'s `token_sort_ratio()` to find potential title matches given the passed in *string*, returning an ordered list for any that score above *threshold*.
+* **createRoom(*title*)** - Creates a new room named *title*.
+* **createMessage(*roomId*, *text*)** - Writes *text* to the room whose ID is *roomId*.
 
 
 Using the sample is simple and demonstrated in `usage.py`:
